@@ -1,0 +1,64 @@
+{
+  "activities": {
+    "open": {
+      "filters": {
+        "type": [
+          "image/jpeg",
+          "image/png",
+          "image/gif"
+        ]
+      }
+    },
+    "pick": {
+      "filters": {
+        "type": [
+          "image/*",
+          "image/jpeg",
+          "image/png",
+          "image/gif",
+          "image/jpg"
+        ]
+      },
+      "returnValue": true
+    }
+  },
+  "messages": [
+    { "activity": "/index.html" }
+  ],
+  "default_locale": "en",
+  "description": "Browse, organize, favorite and edit photos offline on KaiOS. Includes albums, search, collage, private folder and a lightweight image viewer.",
+  "developer": {
+    "name": "Mesbaul Islam"
+  },
+  "icons": {
+    "56": "/assets/icons/icon-56.png",
+    "112": "/assets/icons/icon-112.png"
+  },
+  "launch_path": "/index.html",
+  "locales": {
+    "en": {
+      "description": "Lightweight offline photo gallery for KaiOS phones",
+      "name": "MS Gallery"
+    }
+  },
+  "name": "MS Gallery",
+  "orientation": "portrait",
+  "permissions": {
+    "device-storage:pictures": {
+      "access": "readwrite"
+    },
+    "device-storage:sdcard": {
+      "access": "readwrite"
+    },
+    "contacts": {
+      "access": "readwrite",
+      "description": "Set a photo on an existing contact"
+    }
+  },
+  "type": "privileged",
+  "version": "2.4.0",
+  "subtitle": "Offline photo gallery and editor",
+  "dependencies": {
+    "ads-sdk": "1.5.8"
+  }
+}
